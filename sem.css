@@ -1,0 +1,112 @@
+:root{
+    --maincolor:#eaeaea;
+    --secondarycolour:#fff;
+
+    --bordercolor:#c1c1c1;
+
+
+    --mainText:black;
+    --secondarytext:#4b5156;
+
+    --themedotborder:#24292e;
+    --previewBg:rgb(251, 249, 243, 0.8);
+    --previewShadow:#f0ead6;
+
+    --buttonColor:black;
+}
+
+.main-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.intro-wrapper{
+    background-color: var(--secondarycolour);
+    border: 1px solid var(--bordercolor);
+    border-radius: 5px 5px 0 0 ;
+
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    grid-template-areas: 
+        'nav-wrapper nav-wrapper'
+        'left-column right-column'
+    ;
+}   
+
+.nav-wrapper{
+    border-radius: 5px 5px 0 0 ;
+    grid-area:nav-wrapper ;
+    border-bottom: 1px solid var(--bordercolor) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--maincolor);
+}
+
+#navigation li{
+   display: inline-block;
+   margin-right: 5px ;
+   margin-left: 5px;
+
+}
+
+.dots-wrapper{
+    display: flex;
+    padding: 10px;
+
+}
+
+#dot-1{
+    background-color: #fc6058;
+
+}
+
+#dot-2{
+    background-color: #fec02f;
+}
+
+#dot-3{
+    background-color: #2aca3e;
+}
+
+.browser-dots{
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 5px;
+
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+
+}
+
+h1 , h2, h3, h4, h5, h6, strong{
+    color: var(--mainText);
+    font-family: 'Russo One', sans-serif;
+    font-weight: 500;
+
+}
+
+h1{font-size: 56px;}
+h2{font-size: 36px;}
+h3{font-size: 20px;}
+h4{font-size: 20px;}
+h5{font-size: 20px;}
+h6{font-size: 16px;}
+h7{font-size: 15px;}
+
+.subject{
+    padding-left: 50px;
+}
+
+
+.con{
+    text-align-last: center;
+}
